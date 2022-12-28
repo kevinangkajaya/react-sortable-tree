@@ -1348,9 +1348,9 @@
     "fastq" "^1.6.0"
 
 "@nosferatu500/react-dnd-scrollzone@^2.0.7", "@nosferatu500/react-dnd-scrollzone@^2.0.8":
-  "integrity" "sha512-5kUyDk6lyzWVkbxa0B9kpx+8gQ21qx+6qsGgScqaW2f8P87tE/cI5ECKz0OBp/4a93ToT1nAMjSJU0Dq+huzZg=="
-  "resolved" "https://registry.npmjs.org/@nosferatu500/react-dnd-scrollzone/-/react-dnd-scrollzone-2.0.8.tgz"
-  "version" "2.0.8"
+  "integrity" "sha512-PBJtyBQrm47ifesOfIOsJd2SaxSpjkfKSoQOHewkI4UeYLyEc4hX0BY3vlVxW0zzak2+IneJghmGnp5lznVo6A=="
+  "resolved" "https://registry.npmjs.org/@nosferatu500/react-dnd-scrollzone/-/react-dnd-scrollzone-2.0.10.tgz"
+  "version" "2.0.10"
   dependencies:
     "hoist-non-react-statics" "^3.3.2"
     "lodash.throttle" "^4.1.1"
@@ -4335,6 +4335,15 @@
   dependencies:
     "path-type" "^4.0.0"
 
+"dnd-core@12.0.1":
+  "integrity" "sha512-KzfKXQM9t9uSBO7DFmrILVgXUCShpY3/MbnLPF9/wg1Wcvq2KblbeT72GhjcrplS9cz0DFXilE1NXy43n8plag=="
+  "resolved" "https://registry.npmjs.org/dnd-core/-/dnd-core-12.0.1.tgz"
+  "version" "12.0.1"
+  dependencies:
+    "@react-dnd/asap" "^4.0.0"
+    "@react-dnd/invariant" "^2.0.0"
+    "redux" "^4.0.5"
+
 "dnd-core@14.0.1":
   "integrity" "sha512-+PVS2VPTgKFPYWo3vAFEA8WPbTf7/xo43TifH9G8S1KqnrQu0o77A3unrF5yOugy4mIz7K5wAVFHUcha7wsz6A=="
   "resolved" "https://registry.npmjs.org/dnd-core/-/dnd-core-14.0.1.tgz"
@@ -6754,7 +6763,7 @@
   "version" "4.6.2"
 
 "lodash.throttle@^4.1.1":
-  "integrity" "sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ= sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ=="
+  "integrity" "sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ=="
   "resolved" "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz"
   "version" "4.1.1"
 
@@ -8419,6 +8428,13 @@
   "resolved" "https://registry.npmjs.org/react-colorful/-/react-colorful-5.5.1.tgz"
   "version" "5.5.1"
 
+"react-dnd-html5-backend@^12.1.1":
+  "integrity" "sha512-cQZgfuSGQEwHdvdoPtfUOvcrS8rye/V0hU046LjY/BLSgcrdjtQVviE2d/81QQaeJpvK00JizctsZqVY7IvHgA=="
+  "resolved" "https://registry.npmjs.org/react-dnd-html5-backend/-/react-dnd-html5-backend-12.1.1.tgz"
+  "version" "12.1.1"
+  dependencies:
+    "dnd-core" "12.0.1"
+
 "react-dnd-html5-backend@^14.1.0":
   "integrity" "sha512-6ONeqEC3XKVf4eVmMTe0oPds+c5B9Foyj8p/ZKLb7kL2qh9COYxiBHv3szd6gztqi/efkmriywLUVlPotqoJyw=="
   "resolved" "https://registry.npmjs.org/react-dnd-html5-backend/-/react-dnd-html5-backend-14.1.0.tgz"
@@ -8434,26 +8450,14 @@
     "@react-dnd/invariant" "^2.0.0"
     "dnd-core" "14.0.1"
 
-"react-dnd@>=14.0.5", "react-dnd@14.0.5":
-  "integrity" "sha512-9i1jSgbyVw0ELlEVt/NkCUkxy1hmhJOkePoCH713u75vzHGyXhPDm28oLfc2NMSBjZRM1Y+wRjHXJT3sPrTy+A=="
-  "resolved" "https://registry.npmjs.org/react-dnd/-/react-dnd-14.0.5.tgz"
-  "version" "14.0.5"
+"react-dnd@<=13.1.1", "react-dnd@14.0.4":
+  "integrity" "sha512-oxQW8846omV1l3Pm2zY/atvNxryx+blW1rxnSmoGvFMgmxXpOHulaXrlXgxRH+OLRvLt2cfVTSxZ4ykbzBypaw=="
+  "resolved" "https://registry.npmjs.org/react-dnd/-/react-dnd-13.1.1.tgz"
+  "version" "13.1.1"
   dependencies:
     "@react-dnd/invariant" "^2.0.0"
     "@react-dnd/shallowequal" "^2.0.0"
-    "dnd-core" "14.0.1"
-    "fast-deep-equal" "^3.1.3"
-    "hoist-non-react-statics" "^3.3.2"
-
-"react-dnd@14.0.4":
-  "integrity" "sha512-AFJJXzUIWp5WAhgvI85ESkDCawM0lhoVvfo/lrseLXwFdH3kEO3v8I2C81QPqBW2UEyJBIPStOhPMGYGFtq/bg=="
-  "resolved" "https://registry.npmjs.org/react-dnd/-/react-dnd-14.0.4.tgz"
-  "version" "14.0.4"
-  dependencies:
-    "@react-dnd/invariant" "^2.0.0"
-    "@react-dnd/shallowequal" "^2.0.0"
-    "dnd-core" "14.0.1"
-    "fast-deep-equal" "^3.1.3"
+    "dnd-core" "12.0.1"
     "hoist-non-react-statics" "^3.3.2"
 
 "react-docgen-typescript@^2.0.0":
@@ -8776,7 +8780,7 @@
   dependencies:
     "resolve" "^1.1.6"
 
-"redux@^4.1.1":
+"redux@^4.0.5", "redux@^4.1.1":
   "integrity" "sha512-SH8PglcebESbd/shgf6mii6EIoRM0zrQyjcuQ+ojmfxjTtE0z9Y8pa62iA/OJ58qjP6j27uyW4kUF4jl/jd6sw=="
   "resolved" "https://registry.npmjs.org/redux/-/redux-4.1.2.tgz"
   "version" "4.1.2"
