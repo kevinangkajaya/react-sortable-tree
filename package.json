@@ -27,7 +27,7 @@
     "lint": "eslint '*.{js,json}' '{src,tests}/**/*.{ts,tsx}'",
     "prepublishOnly": "yarn build",
     "release": "standard-version",
-    "storybook": "start-storybook -p ${PORT:-3001} -h 0.0.0.0",
+    "storybook": "start-storybook",
     "postbuild": "yarn copy",
     "copy": "rimraf dist/tests.d.ts && shx cp -r dist/*.d.ts dist/esm && shx mv dist/* dist && shx cp package.json readme.md LICENSE dist && json -I -f dist/package.json -e \"this.private=false; this.devDependencies=undefined; this.optionalDependencies=undefined; this.scripts=undefined; this.prettier=undefined; this['lint-staged']=undefined;\"",
     "publish:alpha": "cd dist && npm publish --tag alpha",
@@ -67,7 +67,7 @@
   "dependencies": {
     "@nosferatu500/react-dnd-scrollzone": "^2.0.8",
     "lodash.isequal": "^4.5.0",
-    "react-dnd": "14.0.4",
+    "react-dnd": "<=14.0.4",
     "react-dnd-html5-backend": "^14.1.0",
     "react-virtuoso": "^2.8.5"
   },
