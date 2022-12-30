@@ -8450,7 +8450,7 @@
     "@react-dnd/invariant" "^2.0.0"
     "dnd-core" "14.0.1"
 
-"react-dnd@<=13.1.1", "react-dnd@14.0.4":
+"react-dnd@^13.1.1", "react-dnd@14.0.4":
   "integrity" "sha512-oxQW8846omV1l3Pm2zY/atvNxryx+blW1rxnSmoGvFMgmxXpOHulaXrlXgxRH+OLRvLt2cfVTSxZ4ykbzBypaw=="
   "resolved" "https://registry.npmjs.org/react-dnd/-/react-dnd-13.1.1.tgz"
   "version" "13.1.1"
